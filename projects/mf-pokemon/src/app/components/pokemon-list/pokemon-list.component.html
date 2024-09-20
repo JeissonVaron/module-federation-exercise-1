@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center mt-3">
+            <h1>Lista de Pokemons</h1>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3" *ngFor="let pokemon of pokemons;">
+            <div class="card m3 mb-3">
+                <img class="card-img-top" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{pokemon.id}}.png" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-title">{{ pokemon.name.english }}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
